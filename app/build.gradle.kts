@@ -44,6 +44,9 @@ android {
         buildConfig = true
         viewBinding = true
     }
+    dataBinding{
+        enable = true
+    }
 }
 
 dependencies {
@@ -60,5 +63,7 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
+    implementation("androidx.activity:activity-ktx:1.1.0")
+    implementation("androidx.fragment:fragment-ktx:1.2.5")
     implementation("com.kakao.sdk:v2-user:2.20.3")
 }
