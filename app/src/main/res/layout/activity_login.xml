@@ -1,10 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:background="@color/backgroundBlue"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="20dp"
     tools:context=".login.LoginActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_marginTop="90dp"
+        android:text="안녕하세요, 지수님!"
+        style="@style/Header1B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginTop="8dp"
+        android:text="지수님의 만선을 위해 몇 가지 정보를 알려주세요."
+        style="@style/Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginTop="84dp"
+        android:text="조업 경력을 입력해주세요"
+        style="@style/Header1B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        app:boxStrokeColor="@color/gray2"
+        app:hintTextColor="@color/gray3"
+        style="@style/Body1"
+        android:hint="햇수를 입력해주세요">
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        style="@style/Header3R"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:backgroundTint="@color/gray2"
+        android:text="다음"
+        android:textColor="@color/backgroundWhite"
+        android:layout_marginTop="279dp"/>
+</LinearLayout>
