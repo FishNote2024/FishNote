@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    header    -->
+    <style name="Header0">
+        <item name="android:fontFamily">@font/apple_r</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+    <style name="Header1R">
+        <item name="android:fontFamily">@font/apple_r</item>
+        <item name="android:textSize">26sp</item>
+    </style>
+    <style name="Header1B">
+        <item name="android:fontFamily">@font/apple_bold</item>
+        <item name="android:textSize">26sp</item>
+    </style>
+    <style name="Header2">
+        <item name="android:fontFamily">@font/apple_r</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="Header3R">
+        <item name="android:fontFamily">@font/apple_r</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="Header3B">
+        <item name="android:fontFamily">@font/apple_bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="Header4">
+        <item name="android:fontFamily">@font/apple_bold</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!--    body    -->
+    <style name="Body1">
+        <item name="android:fontFamily">@font/apple_r</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="Body2">
+        <item name="android:fontFamily">@font/apple_r</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="Body3">
+        <item name="android:fontFamily">@font/apple_r</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <!--    caption    -->
+    <style name="Caption1">
+        <item name="android:fontFamily">@font/apple_r</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="Caption2">
+        <item name="android:fontFamily">@font/apple_r</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+</resources>
