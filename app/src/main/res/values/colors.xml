@@ -14,6 +14,8 @@
     <color name="primaryBlue600">#001EBD</color>
     <color name="primaryBlue700">#0014B2</color>
     <color name="primaryBlue800">#0011AB</color>
+    <color name="primaryBlue900">#00079C</color>
+    <color name="backgroundBlue">#FAFAFF</color>
 
     <!--    yellow   -->
     <color name="primaryYellow50">#F8F5E6</color>
