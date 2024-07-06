@@ -1,6 +1,12 @@
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+}
+
+val properties = Properties().apply {
+    load(project.rootProject.file("local.properties").inputStream())
 }
 
 android {
@@ -13,8 +19,9 @@ android {
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        buildConfigField("String","KAKAO_NATIVE_APP_KEY","\"${properties.getProperty("kakao_native_app_key")}\"")
+        manifestPlaceholders["kakaoNativeAppKey"] = properties.getProperty("kakao_native_app_key")
     }
 
     buildTypes {
@@ -34,7 +41,11 @@ android {
         jvmTarget = "1.8"
     }
     buildFeatures {
+        buildConfig = true
         viewBinding = true
+    }
+    dataBinding{
+        enable = true
     }
 }
 
@@ -51,4 +62,8 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    implementation("androidx.activity:activity-ktx:1.1.0")
+    implementation("androidx.fragment:fragment-ktx:1.2.5")
+    implementation("com.kakao.sdk:v2-user:2.20.3")
 }
