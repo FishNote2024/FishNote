@@ -52,6 +52,7 @@
         android:layout_height="53dp"
         android:backgroundTint="@color/gray2"
         android:text="다음"
+        android:background="@color/gray2"
         android:textColor="@color/backgroundWhite"
         android:layout_marginTop="279dp"/>
 </LinearLayout>
