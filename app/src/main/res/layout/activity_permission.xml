@@ -14,44 +14,35 @@
 
         <TextView
             android:layout_marginTop="90dp"
-            android:text="안녕하세요, 지수님!"
+            android:text="피시노트는 기록을 위해\n아래 권한이 필요해요"
             style="@style/Header1B"
             android:textColor="@color/textBlack"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <TextView
             android:layout_marginTop="8dp"
-            android:text="지수님의 만선을 위해 몇 가지 정보를 알려주세요."
+            android:text="권한을 하용하지 않아도 이용은 가능하지만\n일부 서비스가 제한될 수 있습니다"
             style="@style/Body1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <TextView
             android:layout_marginTop="84dp"
-            android:text="조업 경력을 입력해주세요"
+            android:text="위치"
             android:textColor="@color/textBlack"
             style="@style/Header3B"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginTop="4dp"
+            android:text="조업 일지 작성, 현재 위치 조회를 위해\n위치 정보가 필수로 사용됩니다"
+            android:textColor="@color/gray8"
+            style="@style/Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
-        <androidx.cardview.widget.CardView
-            app:cardCornerRadius="5dp"
-            android:layout_marginTop="16dp"
-            android:layout_width="match_parent"
-            android:layout_height="56dp">
-            <com.google.android.material.textfield.MaterialAutoCompleteTextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layerType="none"
-                android:hint="햇수를 입력해주세요"
-                android:textColorHint="@color/gray3"
-                style="@style/Body1"
-                android:paddingLeft="16dp"
-                android:inputType="number"
-                android:background="@null"/>
-        </androidx.cardview.widget.CardView>
 
         <Button
-            android:id="@+id/yearNextBtn0"
+            android:id="@+id/yearNextBtn6"
             style="@style/Header3R"
             android:layout_width="match_parent"
             android:layout_height="53dp"
