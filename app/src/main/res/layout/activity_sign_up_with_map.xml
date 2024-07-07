@@ -47,6 +47,6 @@
             android:text="다음"
             android:background="@drawable/rounded"
             android:textColor="@color/backgroundWhite"
-            android:layout_marginTop="279dp"/>
+            android:layout_marginTop="69dp"/>
     </LinearLayout>
 </layout>
