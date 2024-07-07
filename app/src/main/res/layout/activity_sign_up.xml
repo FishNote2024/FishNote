@@ -15,6 +15,7 @@
         android:layout_marginTop="90dp"
         android:text="안녕하세요, 지수님!"
         style="@style/Header1B"
+        android:textColor="@color/textBlack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
     <TextView
@@ -26,7 +27,8 @@
     <TextView
         android:layout_marginTop="84dp"
         android:text="조업 경력을 입력해주세요"
-        style="@style/Header1B"
+        android:textColor="@color/textBlack"
+        style="@style/Header3B"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
     <com.google.android.material.textfield.TextInputLayout
