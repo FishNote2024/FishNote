@@ -24,9 +24,9 @@
         <activity
             android:name=".signUp.SignUpWayfish"
             android:exported="false" />
-        <activity
-            android:name=".signUp.SignUpFishway"
-            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".signUp.SignUpFishway"-->
+<!--            android:exported="false" />-->
         <activity
             android:name=".signUp.SignUpKindFish"
             android:exported="false" />
@@ -51,9 +51,7 @@
             android:exported="false" />
         <activity
             android:name=".home.HomeActivity"
-            android:exported="false" /> <!-- <activity -->
-        <!-- android:name=".signUp.signUpActivity" -->
-        <!-- android:exported="false" /> -->
+            android:exported="false" />
         <activity
             android:name=".login.LoginActivity"
             android:exported="true" />

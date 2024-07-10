@@ -1,53 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/main"
-        android:background="@color/backgroundBlue"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         android:layout_marginHorizontal="20dp"
+        android:background="@color/backgroundBlue"
+        android:orientation="vertical"
         tools:context=".signUp.SignUpActivity">
 
         <TextView
+            style="@style/Header1B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="90dp"
             android:text="안녕하세요, 지수님!"
-            style="@style/Header1B"
-            android:textColor="@color/textBlack"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:textColor="@color/textBlack" />
+
         <TextView
-            android:layout_marginTop="8dp"
-            android:text="지수님의 만선을 위해 몇 가지 정보를 알려주세요."
             style="@style/Body1"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="지수님의 만선을 위해 몇 가지 정보를 알려주세요." />
+
         <TextView
-            android:layout_marginTop="84dp"
-            android:text="조업 경력을 입력해주세요"
-            android:textColor="@color/textBlack"
             style="@style/Header3B"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="84dp"
+            android:text="조업 경력을 입력해주세요"
+            android:textColor="@color/textBlack" />
 
         <androidx.cardview.widget.CardView
-            app:cardCornerRadius="5dp"
-            android:layout_marginTop="16dp"
             android:layout_width="match_parent"
-            android:layout_height="56dp">
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="5dp">
+
             <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/yearsOfExperience"
+                style="@style/Body1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layerType="none"
+                android:background="@null"
                 android:hint="햇수를 입력해주세요"
-                android:textColorHint="@color/gray3"
-                style="@style/Body1"
-                android:paddingLeft="16dp"
                 android:inputType="number"
-                android:background="@null"/>
+                android:layerType="none"
+                android:paddingLeft="16dp"
+                android:textColorHint="@color/gray3" />
         </androidx.cardview.widget.CardView>
 
         <Button
@@ -55,10 +59,11 @@
             style="@style/Header3R"
             android:layout_width="match_parent"
             android:layout_height="53dp"
-            android:backgroundTint="@color/gray2"
-            android:text="다음"
+            android:layout_marginTop="279dp"
             android:background="@drawable/rounded"
-            android:textColor="@color/backgroundWhite"
-            android:layout_marginTop="279dp"/>
+            android:backgroundTint="@color/gray2"
+            android:enabled="false"
+            android:text="다음"
+            android:textColor="@color/backgroundWhite" />
     </LinearLayout>
 </layout>
