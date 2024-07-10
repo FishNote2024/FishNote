@@ -38,16 +38,13 @@
             android:layout_marginTop="16dp"
             android:layout_width="match_parent"
             android:layout_height="56dp">
-            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+
+            <Spinner
+                android:id="@+id/ageRange"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layerType="none"
-                android:hint="나이대를 선택해주세요"
-                android:textColorHint="@color/gray3"
-                style="@style/Body1"
-                android:paddingLeft="16dp"
-                android:inputType="number"
-                android:background="@null"/>
+                android:layout_weight="1"
+                android:background="@drawable/spinner_home_register_background"/>
         </androidx.cardview.widget.CardView>
 
         <Button
@@ -59,6 +56,7 @@
             android:text="다음"
             android:background="@drawable/rounded"
             android:textColor="@color/backgroundWhite"
-            android:layout_marginTop="279dp"/>
+            android:layout_marginTop="279dp"
+            android:enabled="false"/>
     </LinearLayout>
 </layout>

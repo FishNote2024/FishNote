@@ -1,6 +1,8 @@
 package com.example.fish_note.signUp
 
 import android.content.Intent
+import android.graphics.drawable.GradientDrawable
+import android.graphics.drawable.LayerDrawable
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -46,10 +48,14 @@ class SignUpActivity : AppCompatActivity() {
                     val color = if (isNotEmpty) R.color.primaryBlue500 else R.color.gray2
                     binding.yearNextBtn0.backgroundTintList =
                         ContextCompat.getColorStateList(this@SignUpActivity, color)
-                    if (inputText.isNotEmpty()) {
+
+                    val cardBackground = binding.yearsOfExperience.background.mutate() as GradientDrawable
+                    if (isNotEmpty) {
+                        cardBackground.setStroke(3, ContextCompat.getColor(this@SignUpActivity, R.color.primaryBlue500))
                         binding.yearsOfExperience.setText("$inputText 년")
                         binding.yearsOfExperience.setSelection(inputText.length)
                     } else {
+                        cardBackground.setStroke(1, ContextCompat.getColor(this@SignUpActivity, R.color.gray2))
                         binding.yearsOfExperience.setText("")
                     }
                     isTextChangedByUser = true
